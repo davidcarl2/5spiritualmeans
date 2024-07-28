@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('test.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: black;
+            position: relative; /* Added for overlay */
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+            z-index: -1;
+        }
+        .content {
+            height: 80vh; /* Reduced height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            color: white;
+            position: relative; /* To stay above overlay */
+        }
+        .scroll-content {
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+            padding: 20px;
+            color: black;
+            position: relative; /* To stay above overlay */
+        }
+        .image-container {
+            display: flex;
+            align-items: center;
+            margin-left: 10%;
+            cursor: zoom-in;
+        }
+        .image-container img {
+            width: 200px;
+            height: auto;
+            margin-right: 20px;
+            transition: transform 0.5s ease;
+        }
+        .image-container img:hover {
+            transform: scale(2);
+        }
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        p {
+            margin: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div> <!-- Added overlay div -->
+    <div class="content">
+        <h1>The 5 Spiritual Means</h1>
+        <h3>By Fr. Zafe</h3>
+        <p>**The Age of New Evangelization**</p>
+        <p>In 1975, Pope Paul VI published an Apostolic Exhortation: Evangelii Nuntiandi (EN), whose subject was on Evangelization in the Modern World. In it, he talked about the need to reverse the de-Christianization of Europe. He encouraged the Church to find new ways and methods for evangelization in response to the new needs and conditions of the present times (EN, no. 40). He continued that evangelization is not the prerogative of the clergy, but is the task of all the members of the Church. He reminded them that the privileged means of evangelization is the preaching of the Word (EN, no. 43).</p>
+        <p>In 2010, Pope Benedict XVI established the Pontifical Council for Promoting New Evangelization. Its task is to promote a renewed evangelization in countries where the Church is long-established but is now experiencing a decline in practice of the faith. This is due to secularization, loss of a sense of the sacred, and the decline of faith in the supernatural and in the Divine. To remedy this, the Holy Father gave examples of some basic means of spiritual renewal, which he called “Spiritual Means.” These included the basics: the Word of God; Eucharistic adoration; frequent confession; prayer and fasting; and almsgiving. These means are the basis for every Catholic’s spiritual growth and help them to grow in their relationship with God and neighbor. The effectiveness of these means is based on personal conviction, as well as the availability of the sacraments.</p>
+        <p>During his recent visit to America in 2015, Pope Francis urged Catholics to take up the call to evangelize with new vigor and commitment. He stated that evangelization is the responsibility of all Christians, who, by virtue of their baptism, are called to be missionary disciples. He also emphasized that the effectiveness of evangelization is not measured by numbers, but by the depth of the encounter with Christ and the authenticity of the witness.</p>
+        <p>Therefore, in response to the call of the Holy Fathers, let us renew our commitment to the mission of evangelization by utilizing these spiritual means in our daily lives and encouraging others to do the same. In this way, we can contribute to the renewal of the Church and the spread of the Gospel in our world today.</p>
+    </div>
+    <div class="scroll-content" id="scrollContent">
+        <div class="image-container">
+            <img src="skibidi.jpg" alt="Skibidi">
+            <div>
+                <h2>About:</h2>
+                <p>A Journey Of Faith Towards A Deeper, Personal Relationship With The Lord Through The Five Spiritual Means
+                    Note:To help Catholics develop a deeper, personal relationship with the Lord, emails on the Five Spiritual Means were sent to Parishes and individual persons across the U.S.A. and 125 foreign countries (Europe, Africa, Asia, Latin America, the Caribbean and Oceania), as of April 6, 2015.</p>
+            </div>
+        </div>
+        <div>
+            <p>In the Age of the New Evangelization (Pope Benedict XVI established the Pontifical Council for the Promotion of the New Evangelization on Sept. 21, 2010), the Philippine-American Catholic Council (P.A.C.C.) has been promoting a deeper personal relationship with the Lord Jesus through The Five Spiritual Means which are:</p>
+            <p><b>1. Daily Reading of the Bible</b></p>
+            <p>Specially the 4 Gospels (one can start with the shortest Gospel: according to Mark) for at least a chapter a day. Spend at least 5 minutes to read slowly and reflect and meditate on the Word of God! Then, do something holy or virtuous in response to the Word of God! “Be doers of the Word and not hearers only…” Jas 1:22</p>
+            <p><b>2. Daily Examination of Conscience</b></p>
+            <p>Before you go to bed, ask yourselves these two questions: (1) What good have I done today? If you have done something good, thank God for it! Then ask: (2) In what way did I offend God today? Sin can either be in thought, word or action; and this can arise from any of the Seven Capital Sins, namely: Pride, Avarice, Lust, Anger, Envy, Gluttony, Laziness (Sloth), especially in Spiritual Matters! It can be violation/s of the Ten Commandments or Laws of the Church. Sin can be an act of omission (ex. failure to fulfill one’s basic duties as Catholic, etc.). In the first Letter of John, it is written: "Whoever sins belongs to the devil, because the devil has sinned from the beginning." 1 Jn 3:8 Afterwards, ask God’s forgiveness… and resolve, with the help of God, not to do it again! When night time comes, ask the two questions again! Do this Examination of Conscience 365 nights a year… and you’ll find a big difference in your life! You will be more focused on God’s Love and Mercy towards you and as a consequence, be more determined to love God above all creatures/things and do what is pleasing to Him. St. Teresa of Avila, a Spanish Mystic and Saint, wrote: “Amor con amor se paga”- “Love is repaid with love.”</p>
+            <p><b>3. Devout, Monthly Confession</b></p>
+            <p>Pope Benedict XVI said: “Exhort the faithful to frequent the Sacrament of Penance regularly which enables one to discover the gift of God’s mercy… Confession helps us to form our conscience, to fight against our evil inclinations, to allow ourselves to be healed by Christ, to progress in the life of the Spirit.” No one who is serious about his/her Spiritual Growth can neglect devout, monthly Confession! Going to Confession is an act of Faith and Humility. Besides, it is like our morning shower… “it cleanses and refreshes the soul!” It’s good for the soul! St. John Paul II (Pope) and St. Teresa of Calcutta (Mother Teresa) went to Confession once a week! Pope Francis confesses twice a month!</p>
+            <p><b>4. Awareness of God’s Loving Presence</b></p>
+            <p>The Saints, when they were alone or with others, had a vivid awareness of God’s Loving Presence. This helped them greatly to avoid sin! One means, among others, to remember God’s Loving Presence is through the frequent, deliberate use (throughout the day) of “one-sentence prayers,” like “Lord Jesus, I love you.” or “Lord, have mercy on me.” etc., or whatever is one’s favorite short prayer. This can be done mentally without moving one’s lips, whether one is at home, place of work, school, etc. Things from Nature, like sunlight, rain, clouds, thunder, lightning, trees, plants, flowers, etc., can also remind you of the Presence of God. However, you must decide which of these specific things should be a reminder to you of God’s Presence.</p>
+            <p><b>5. Practice of the Christian Virtues</b></p>
+            <p>The Practice of the Christian Virtues, like Humility, etc. requires daily spiritual struggles against one or several of the Seven Capital Sins that can dominate one’s everyday life. Pope Benedict XVI said: “The passage to Eternal Life is open to all but it is narrow because it is demanding: it requires commitment, self-denial and the mortification of our selfishness.” These spiritual struggles can last for a lifetime but the grace of God will not be lacking. The big difference between the Saints and us today is that they, with God’s Help, tried harder.</p>
+            <p>Please remember always that implied necessarily in the Five Spiritual Means are:</p>
+            <p>a. Prayerfulness b. Devout, Frequent Mass/Holy Communion!</p>
+            <p>“Rejoice in hope, be patient under trial, persevere in prayer.” Rom 12:12</p>
+            <p>Rev. Peter V. Zafe, S.T.D. P.A.C.C. Director, Marikina City, Philippines (formerly based in Toledo, OH, U.S.A.) As of today, March 20, 2019, Promoters of the Five Spiritual Means live in Canada, Cuba, Indonesia, Malaysia, Philippines, Singapore and U.S.A. Website: www.5spiritualmeans.org Facebook: The Five Spiritual Means</p>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const scrollContent = document.getElementById('scrollContent');
+            const scrollPosition = window.scrollY + window.innerHeight;
+            const contentPosition = scrollContent.offsetTop;
+
+            if (scrollPosition > contentPosition) {
+                scrollContent.classList.add('visible');
+            }
+        });
+    </script>
+</body>
+</html>
